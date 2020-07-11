@@ -1,0 +1,32 @@
+<button mat-button [matMenuTriggerFor]="aboveMenu">Account</button>
+<!-- #docregion menu-position -->
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+<!-- #enddocregion menu-position -->
+  <button mat-menu-item>Log In</button>
+  <button mat-menu-item>Register</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Destinations</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item><a  routerLink='/table' >View All</a></button>
+  <button mat-menu-item>Search</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Attractions</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>Popular Places</button>
+  <button mat-menu-item>Search By Tags</button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu">Help</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item>FAQs</button>
+  <button mat-menu-item>Contact Us</button>
+</mat-menu>
+
+
+
+<button   mat-button style="float: right;"><img src="https://i.imgur.com/NDzNcr0.png" style="height: 37px; width: 70px;"></button>
+
+
